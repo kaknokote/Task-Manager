@@ -1,0 +1,77 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "vlad",
+      "password": "qweqwe",
+      "token": "vlad_1754057188282"
+    },
+    {
+      "id": "2",
+      "username": "user2",
+      "password": "password456",
+      "token": "user2_1725033600000"
+    },
+    {
+      "id": "1754053392246",
+      "username": "new_user",
+      "password": "qweqwe",
+      "token": "new_user_1754053392246"
+    },
+    {
+      "id": "1754053981801",
+      "username": "user_very_new",
+      "password": "qweqwe",
+      "token": "user_very_new_1754053981801"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "1",
+      "userId": "1",
+      "categoryId": "1",
+      "title": "Создать проект",
+      "description": "Настроить структуру проекта",
+      "urgency": "high",
+      "status": "todo",
+      "createdAt": "2025-07-30T10:00:00Z"
+    },
+    {
+      "id": "2",
+      "userId": "1",
+      "categoryId": "2",
+      "title": "Написать README",
+      "description": "Описать проект для портфолио",
+      "urgency": "medium",
+      "status": "in-progress",
+      "createdAt": "2025-07-30T12:00:00Z"
+    },
+    {
+      "id": "3",
+      "userId": "2",
+      "categoryId": "3",
+      "title": "Позвонить клиенту",
+      "description": "Обсудить требования",
+      "urgency": "low",
+      "status": "done",
+      "createdAt": "2025-07-29T15:00:00Z"
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "userId": "1",
+      "name": "Работа"
+    },
+    {
+      "id": "2",
+      "userId": "1",
+      "name": "Личное"
+    },
+    {
+      "id": "3",
+      "userId": "2",
+      "name": "Бизнес"
+    }
+  ]
+}
