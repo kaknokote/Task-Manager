@@ -4,44 +4,32 @@
       "id": "1",
       "username": "vlad",
       "password": "qweqwe",
-      "token": "vlad_1754057188282"
+      "token": "vlad_1754395429386"
     },
     {
       "id": "2",
-      "username": "user2",
-      "password": "password456",
-      "token": "user2_1725033600000"
-    },
-    {
-      "id": "1754053392246",
-      "username": "new_user",
+      "username": "anna",
       "password": "qweqwe",
-      "token": "new_user_1754053392246"
-    },
-    {
-      "id": "1754053981801",
-      "username": "user_very_new",
-      "password": "qweqwe",
-      "token": "user_very_new_1754053981801"
+      "token": "anna_1754314563364"
     }
   ],
   "tasks": [
     {
-      "id": "1",
       "userId": "1",
-      "categoryId": "1",
-      "title": "Создать проект",
-      "description": "Настроить структуру проекта",
+      "category": "Education",
+      "title": "Create Project!",
+      "description": "Set up project structure",
       "urgency": "high",
-      "status": "todo",
-      "createdAt": "2025-07-30T10:00:00Z"
+      "status": "done",
+      "createdAt": "2025-07-30T10:00:00Z",
+      "id": "1"
     },
     {
       "id": "2",
       "userId": "1",
-      "categoryId": "2",
-      "title": "Написать README",
-      "description": "Описать проект для портфолио",
+      "category": "Work",
+      "title": "Write README",
+      "description": "Document project for portfolio",
       "urgency": "medium",
       "status": "in-progress",
       "createdAt": "2025-07-30T12:00:00Z"
@@ -49,29 +37,82 @@
     {
       "id": "3",
       "userId": "2",
-      "categoryId": "3",
-      "title": "Позвонить клиенту",
-      "description": "Обсудить требования",
+      "category": "Work",
+      "title": "Call Client",
+      "description": "Discuss requirements",
       "urgency": "low",
       "status": "done",
       "createdAt": "2025-07-29T15:00:00Z"
-    }
-  ],
-  "categories": [
-    {
-      "id": "1",
-      "userId": "1",
-      "name": "Работа"
     },
     {
-      "id": "2",
-      "userId": "1",
-      "name": "Личное"
-    },
-    {
-      "id": "3",
+      "id": "6",
       "userId": "2",
-      "name": "Бизнес"
+      "category": "Home",
+      "title": "Schedule Team Meeting",
+      "description": "Plan sprint review with the team",
+      "urgency": "medium",
+      "status": "todo",
+      "createdAt": "2025-08-03T11:00:00Z"
+    },
+    {
+      "id": "7",
+      "userId": "Education",
+      "category": "5",
+      "title": "Update Documentation",
+      "description": "Revise user guide with new features",
+      "urgency": "low",
+      "status": "in-progress",
+      "createdAt": "2025-08-03T16:00:00Z"
+    },
+    {
+      "userId": "1",
+      "category": "Education",
+      "title": "Fix Login Bug",
+      "description": "Resolve issue with JWT authentication",
+      "urgency": "high",
+      "status": "done",
+      "createdAt": "2025-08-04T08:00:00Z",
+      "id": "8"
+    },
+    {
+      "id": "9",
+      "userId": "2",
+      "category": "Work",
+      "title": "Prepare Presentation",
+      "description": "Create slides for client demo",
+      "urgency": "medium",
+      "status": "done",
+      "createdAt": "2025-07-31T13:00:00Z"
+    },
+    {
+      "id": "10",
+      "userId": "1",
+      "category": "Education",
+      "title": "Optimize Database Queries",
+      "description": "Improve performance of task filtering",
+      "urgency": "low",
+      "status": "in-progress",
+      "createdAt": "2025-08-04T10:00:00Z"
+    },
+    {
+      "id": "febd",
+      "userId": "1",
+      "category": "Education",
+      "title": "Create selectors ",
+      "description": "Create some urg and categ selectors for my project",
+      "urgency": "medium",
+      "status": "done",
+      "createdAt": 1754662295504
+    },
+    {
+      "userId": "1",
+      "category": "Home",
+      "title": "Edited task",
+      "description": "Now i'm going to edit this one. \nIt worked. Cool!",
+      "urgency": "low",
+      "status": "done",
+      "createdAt": 1754928655641,
+      "id": "790d"
     }
   ]
 }

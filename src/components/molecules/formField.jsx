@@ -1,4 +1,4 @@
-import { Button, ErrorMessage, Input, Title } from '../atoms';
+import { AuthButton, ErrorMessage, Input, Title } from '../atoms';
 
 export const FormField = ({ text, error, fields, button }) => {
 	return (
@@ -16,7 +16,7 @@ export const FormField = ({ text, error, fields, button }) => {
 				/>
 			))}
 			{error && <ErrorMessage error={error} />}
-			<Button button={button} />
+			<AuthButton button={button} />
 		</div>
 	);
 };

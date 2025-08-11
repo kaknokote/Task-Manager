@@ -48,6 +48,7 @@ const authSlice = createSlice({
 				state.loading = false;
 				state.error = action.payload;
 			})
+
 			.addCase(register.pending, (state) => {
 				state.loading = true;
 				state.error = null;
@@ -60,13 +61,14 @@ const authSlice = createSlice({
 				state.loading = false;
 				state.error = action.payload;
 			})
+
 			.addCase(restoreAuth.pending, (state) => {
 				state.loading = true;
 				state.error = null;
 			})
 			.addCase(restoreAuth.fulfilled, (state, action) => {
 				state.loading = false;
-				state.user = action.payload;
+				state.user = action.payload || null;
 			})
 			.addCase(restoreAuth.rejected, (state, action) => {
 				state.loading = false;
