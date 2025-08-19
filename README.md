@@ -1,12 +1,29 @@
-# React + Vite
+# Task manager
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Менеджер задач, созданный на React с использованием Redux Toolkit для управления состоянием и TailwindCSS для стилизации. Применены Feature-Sliced архитектуры и Atomic Design для организации компонентов.
 
-Currently, two official plugins are available:
+# Стек
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+React 19 – основной UI-фреймворк
 
-## Expanding the ESLint configuration
+React Router DOM 7 – маршрутизация
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Redux Toolkit + React Redux – управление состоянием
+
+TailwindCSS 4 – стилизация
+
+Vite 7 + SWC – сборка проекта
+
+JSON Server – моковый backend для тестирования API
+
+# Функционал
+
+Регистрация и авторизация пользователей (mock API)
+
+Управление задачами: добавление, редактирование, удаление
+
+Фильтрация задач по статусу и (или) срочности
+
+Поиск задач по названию
+
+Локальное хранение состояния через Redux Toolkit
