@@ -1,9 +1,15 @@
 import { Link } from 'react-router-dom';
 import { useAuth } from '../../hooks/useAuth';
+import { useTasks } from '../../hooks/useTasks';
 import { CommonButton } from '../atoms';
 
 export const NavPanel = () => {
 	const { user } = useAuth();
+	const { tasks } = useTasks();
+
+	const todoUrgentTasks = tasks.filter(
+		(task) => task.urgency === 'high' && task.status !== 'done',
+	).length;
 
 	return (
 		<nav className="bg-gray-50 px-6 py-4 mb-6 border-b border-gray-200">
@@ -18,6 +24,22 @@ export const NavPanel = () => {
 						<div>Task Manager</div>
 					)}
 				</Link>
+
+				{user && todoUrgentTasks ? (
+					<>
+						{todoUrgentTasks === 1 ? (
+							<div className="text-red-500">
+								{todoUrgentTasks} urgent task uncompleted
+							</div>
+						) : (
+							<div className="text-red-500">
+								{todoUrgentTasks} urgent tasks uncompleted
+							</div>
+						)}
+					</>
+				) : (
+					<></>
+				)}
 
 				<div className="flex items-center gap-3">
 					{user ? (

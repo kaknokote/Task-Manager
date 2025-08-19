@@ -4,13 +4,19 @@
       "id": "1",
       "username": "vlad",
       "password": "qweqwe",
-      "token": "vlad_1755600401236"
+      "token": "vlad_1755602577623"
     },
     {
       "id": "2",
       "username": "anna",
       "password": "qweqwe",
-      "token": "anna_1755011492223"
+      "token": "anna_1755602339677"
+    },
+    {
+      "id": "1755602616783",
+      "username": "sergey",
+      "password": "qweqwe",
+      "token": "sergey_1755602616783"
     }
   ],
   "tasks": [
@@ -123,6 +129,36 @@
       "status": "in-progress",
       "createdAt": 1755601135918,
       "id": "nIhiyqs"
+    },
+    {
+      "userId": "1",
+      "category": "Education",
+      "title": "Urgent task",
+      "description": "It's needed to be done immediately",
+      "urgency": "high",
+      "status": "todo",
+      "createdAt": 1755602162631,
+      "id": "o9K_3GG"
+    },
+    {
+      "userId": "2",
+      "category": "Home",
+      "title": "Meet my mom",
+      "description": "Leninsky avenue 17:00 Mon",
+      "urgency": "high",
+      "status": "todo",
+      "createdAt": 1755602304765,
+      "id": "-ZarQky"
+    },
+    {
+      "userId": "1755602616783",
+      "category": "Home",
+      "title": "Clean up my house",
+      "description": "Vacuum, wash the dishes",
+      "urgency": "high",
+      "status": "in-progress",
+      "createdAt": 1755602667396,
+      "id": "Ihhn00b"
     }
   ]
 }
