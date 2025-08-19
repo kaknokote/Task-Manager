@@ -1,10 +1,20 @@
 import { Title } from '../../../components/atoms';
 import { useTasks } from '../../../hooks/useTasks';
 import { TaskCard, TaskFilters } from '../../../components/molecules';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { useAuth } from '../../../hooks/useAuth';
+import { useNavigate } from 'react-router-dom';
 
 export const Tasks = () => {
+	const navigate = useNavigate();
 	const { tasks, deleteExistingTask } = useTasks();
+	const { user } = useAuth();
+
+	useEffect(() => {
+		if (!user) {
+			navigate('/login');
+		}
+	}, [user, navigate]);
 
 	const [filters, setFilters] = useState({
 		searchQuery: '',

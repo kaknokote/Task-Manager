@@ -4,13 +4,13 @@
       "id": "1",
       "username": "vlad",
       "password": "qweqwe",
-      "token": "vlad_1754395429386"
+      "token": "vlad_1755600401236"
     },
     {
       "id": "2",
       "username": "anna",
       "password": "qweqwe",
-      "token": "anna_1754314563364"
+      "token": "anna_1755011492223"
     }
   ],
   "tasks": [
@@ -113,6 +113,16 @@
       "status": "done",
       "createdAt": 1754928655641,
       "id": "790d"
+    },
+    {
+      "userId": "1",
+      "category": "Education",
+      "title": "Practice in university",
+      "description": "To do a practice job (Testing JS with JEST)",
+      "urgency": "high",
+      "status": "in-progress",
+      "createdAt": 1755601135918,
+      "id": "nIhiyqs"
     }
   ]
 }
